@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Qasr Shaneela</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --royal-purple: #5D3A9B;
+      --antique-gold: #D4AF37;
+      --soft-cream: #FAF4E5;
+      --deep-teal: #2C6E6C;
+      --dusty-rose: #C08081;
+      --crimson-red: #A4133C;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background: var(--soft-cream);
+      color: var(--royal-purple);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--soft-cream);
+      border-bottom: 2px solid var(--antique-gold);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--royal-purple);
+      font-weight: bold;
+    }
+    nav a.active { border-bottom: 2px solid var(--antique-gold); padding-bottom: 2px; }
+    .hero {
+      background: var(--royal-purple);
+      color: var(--soft-cream);
+      padding: 5rem 2rem 3rem;
+      text-align: center;
+    }
+    .hero h1 { font-size: 3rem; margin: 0 0 0.5rem; }
+    .hero p { font-size: 1.2rem; margin: 0; opacity: 0.95; }
+    main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    .card h2 { color: var(--deep-teal); margin-top: 0; font-size: 1.75rem; }
+    .card h3 { color: var(--dusty-rose); margin-bottom: 0.5rem; }
+    ul { margin: 0.5rem 0 0 1.15rem; }
+    .cta {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+    .cta a {
+      background: var(--crimson-red);
+      color: #fff;
+      padding: 0.85rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    footer {
+      background: var(--royal-purple);
+      color: var(--soft-cream);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    footer a { color: var(--soft-cream); text-decoration: none; margin: 0 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>Qasr Shaneela</strong></div>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="index.html#media">Media</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Services</h1>
+    <p>Where fragrance, heritage, and strategy meet.</p>
+  </section>
+
+  <main>
+    <div class="grid">
+      <div class="card">
+        <h2>Luxury Perfumery</h2>
+        <h3>Perfume Consulting</h3>
+        <ul>
+          <li>Private collection curation for HNW clients and connoisseurs</li>
+          <li>Brand-side advisory on sourcing, olfactive direction, and launch strategy</li>
+          <li>Bespoke commissions (bridal, legacy, or event fragrances)</li>
+          <li>VIP sourcing: rare attars, oud, and limited editions</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Speaking & Media Engagement</h2>
+        <h3>Luxury Thought Leadership</h3>
+        <ul>
+          <li>Signature talks: “Fragrance as Heritage”, “Luxury in the Age of AI”, “Dubai Beyond Commerce”</li>
+          <li>Panels, keynotes, and private salon-style conversations</li>
+        </ul>
+        <h3>Media Features & Collaborations</h3>
+        <ul>
+          <li>Expert commentary on niche perfumery and luxury markets</li>
+          <li>Editorial collaborations, interviews, and brand partnerships</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Luxury & Lifestyle Consultancy</h2>
+        <ul>
+          <li>Market entry & brand positioning (Dubai / London focus)</li>
+          <li>Luxury e‑commerce & SEO for beauty and fragrance</li>
+          <li>AI & automation for boutique houses (pricing, CX, content)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="mailto:info@qasr-shaneela.com?subject=Qasr%20Shaneela%20Services%20Enquiry">Enquire Now</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Qasr Shaneela. All Rights Reserved.</p>
+    <p><a href="index.html">Home</a> | <a href="index.html#about">About</a> | <a href="services.html">Services</a> | <a href="index.html#contact">Contact</a></p>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Qasr Shaneela Luxury Services",
+    "provider": {
+      "@type": "Person",
+      "name": "Shaneela Rowah Al-Qamar"
+    },
+    "areaServed": ["AE", "GB", "Global"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Luxury Perfumery",
+          "itemListElement": [
+            { "@type": "Service", "name": "Perfume Consulting" },
+            { "@type": "Service", "name": "Bespoke Commissions" }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Speaking & Media Engagement",
+          "itemListElement": [
+            { "@type": "Service", "name": "Luxury Thought Leadership" },
+            { "@type": "Service", "name": "Media Features & Collaborations" }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Luxury & Lifestyle Consultancy",
+          "itemListElement": [
+            { "@type": "Service", "name": "Market Entry & Brand Positioning" },
+            { "@type": "Service", "name": "E‑commerce & SEO" },
+            { "@type": "Service", "name": "AI & Automation Advisory" }
+          ]
+        }
+      ]
+    }
+  }
+  </script>
+</body>
+</html>
